@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container-left {
+    width: 50vw;
+    height: 100vh;
+    color: #FFF;
+    background-color: #3B576D; 
+}
+#footer-left a{
+    color: #FFF;
+}
+#header-left h1 {
+    padding: 1.3rem;
+    font-size: 1.5rem;
+}
+#header-left h2 {
+    padding: 0 1.3rem;
+    font-size: 1.3rem;
+    margin-top: 8.3rem;
+    text-transform: uppercase;
+}
+.left-name h1 {
+    padding: 1rem;
+    font-size: 5rem;
+}
+#buttons {
+    display: flex;
+    margin-left: 1.3rem;
+}
+
+#button-about {
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    color: #3B576D;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.1rem 2.5rem;
+    background-color: #FFF;
+}
+#button-hireMe {
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    color: #FFF;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.1rem 2.5rem;
+    background-color: #3B576D;
+    margin-left: 0.8rem;
+}
+#container-right {
+    
+}
