@@ -3,56 +3,158 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-#container-left {
-    width: 50vw;
-    height: 100vh;
-    color: #FFF;
-    background-color: #3B576D; 
-}
-#footer-left a{
-    color: #FFF;
-}
-#header-left h1 {
-    padding: 1.3rem;
-    font-size: 1.5rem;
-}
-#header-left h2 {
-    padding: 0 1.3rem;
-    font-size: 1.3rem;
-    margin-top: 8.3rem;
-    text-transform: uppercase;
-}
-.left-name h1 {
-    padding: 1rem;
-    font-size: 5rem;
-}
-#buttons {
+header {
     display: flex;
-    margin-left: 1.3rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+header h1 {
+    color: #FFF;
+    font-size: 23px;
+}
+#menu {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.menu-line {
+    height: 3px;
+    background-color: #333;
+}
+#container {
+    height: 100vh;
+    display: flex;
+}
+#left {
+    flex: 1;
+    background-color: #3B576D;
+    align-items: center;
+    padding:  0 1.3rem;
+}
+#left h2 {
+    margin-top: 11.6rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #FFF;
+}
+#left h1 {
+    margin-top: 1rem;
+    font-size: 80px;
+    color:#FFF;
+}
+#left-buttons {
+    display: flex;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+}
+#hire-me,
+#more-about-me {
+    box-shadow: 0px 0px 10px #000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#more-about-me {
+    padding: 1.2rem 2.5rem;
+    margin-right: 1rem;
+    color: #3B576D;
+    background-color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#hire-me {
+    padding: 1.2rem 2.5rem;
+    margin-right: 1rem;
+    background-color: #3B576D;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    color: #FFF;
+    font-size: 13px;
+}
+#left-footer {
+    color: #FFF;
+    font-size: 13px;
+    padding: 0;
+}
+#left-footer a {
+    text-decoration: none;
+    color: #FFF;
+}
+#rigth {
+    flex: 1;
+    background-image: url('/assets/image/hero.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-position-x: center;
+    background-position-y: top;
 }
 
-#button-about {
-    text-transform: uppercase;
-    border-radius: 0.3rem;
-    color: #3B576D;
-    width: fit-content;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 1.1rem 2.5rem;
-    background-color: #FFF;
+@media (max-width:840px){
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 20px;
+        left: 0;
+        right: 0;
+        color:#FFF;
+        background-color: #3B576D;
+    }
+    .menu-line {
+        background-color:#FFF;
+    }
+    #container {
+        flex-direction: column;
+        text-align: center;
+    }
+    #left h2 {
+        margin-top: 2.5rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #FFF;
+    }
+    footer {
+        position: relative;
+    }
+    #left-footer {
+        color: #000;
+        font-size: 13px;
+        padding: 0;
+    }
+    #left-footer a {
+        text-decoration: none;
+        color: #000;
+    }
+    #left-buttons {
+        justify-content: center;
+    }
+
 }
-#button-hireMe {
-    text-transform: uppercase;
-    border-radius: 0.3rem;
-    color: #FFF;
-    width: fit-content;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 1.1rem 2.5rem;
-    background-color: #3B576D;
-    margin-left: 0.8rem;
-}
-#container-right {
-    
+@media (max-width:440px) {
+    #left h1 {
+        font-size: 3rem;
+    }
+    #left-buttons {
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+    #more-about-me {
+        margin-bottom: 1rem;
+    }
+
 }
